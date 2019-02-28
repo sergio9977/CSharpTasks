@@ -11,14 +11,18 @@ namespace TareaVector
         static void Main(string[] args)
         {
             string[] datas = args;
-            var operation = OperationVector.Instance;
-            operation.VectorMoreLarge(datas);
-            foreach (var data in datas)
-            {
-                int[] vec = operation.TransformArray(data);
-                int[] result = operation.SumArray(vec);
-            }
-            operation.printVector();
+            string[] a = { "1,1", "1,1"};
+            var operation = DataAdapter.Instance;
+            operation.ValidateInput(a);
+            var vectorA = operation.VectorA;
+            var vectorB = operation.VectorB;
+            var resultSum = vectorA.Add(vectorB);
+            Console.WriteLine(resultSum.ToString());
+            var lengthVec = resultSum.LengthVector(resultSum);
+            Console.WriteLine(lengthVec.ToString());
+            var resultProp = vectorA.Prop(vectorB);
+            Console.WriteLine(resultProp.ToString());
+            Console.ReadKey();
         }
     }
 }
