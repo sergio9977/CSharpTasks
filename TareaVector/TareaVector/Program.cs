@@ -11,9 +11,9 @@ namespace TareaVector
         static void Main(string[] args)
         {
             string[] datas = args;
-            string[] a = { "1,2", "2,1"};
+            //string[] a = { "1,2", "2,1"};
             var operation = DataAdapter.Instance;
-            operation.ValidateInput(a);
+            operation.ValidateInput(datas);
             var vectorA = operation.VectorA;
             var vectorB = operation.VectorB;
             var resultSum = vectorA.Add(vectorB);
