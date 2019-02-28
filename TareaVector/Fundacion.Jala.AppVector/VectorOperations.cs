@@ -26,8 +26,8 @@ namespace Fundacion.Jala.AppVector
         }
         public int Prop(VectorOperations vectorB)
         {
-            int resultVectorA = this.X * this.Y;
-            int resultVectorB = vectorB.X * vectorB.Y;
+            int resultVectorA = this.X * vectorB.X;
+            int resultVectorB = this.Y * vectorB.Y;
             int result = resultVectorA + resultVectorB;
             return result;
         }
