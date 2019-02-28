@@ -12,4 +12,9 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fundacion.Jala.AppVector\Fundacion.Jala.AppVector.csproj" />
+    <ProjectReference Include="..\TareaVector\TareaVector.csproj" />
+  </ItemGroup>
+
 </Project>

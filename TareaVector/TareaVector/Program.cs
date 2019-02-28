@@ -11,14 +11,15 @@ namespace TareaVector
         static void Main(string[] args)
         {
             string[] datas = args;
-            string[] a = { "1,1", "1,1"};
+            string[] a = { "1,2", "2,1"};
             var operation = DataAdapter.Instance;
             operation.ValidateInput(a);
             var vectorA = operation.VectorA;
             var vectorB = operation.VectorB;
             var resultSum = vectorA.Add(vectorB);
             Console.WriteLine(resultSum.ToString());
-            var lengthVec = resultSum.LengthVector(resultSum);
+            Console.WriteLine(resultSum);
+            var lengthVec = resultSum.LengthVector();
             Console.WriteLine(lengthVec.ToString());
             var resultProp = vectorA.Prop(vectorB);
             Console.WriteLine(resultProp.ToString());

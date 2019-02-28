@@ -31,11 +31,11 @@ namespace Fundacion.Jala.AppVector
             int result = resultVectorA + resultVectorB;
             return result;
         }
-        public double LengthVector(VectorOperations vectorResult)
+        public double LengthVector()
         {
-            int resultPropX = vectorResult.X * vectorResult.X;
-            int resultPropY = vectorResult.Y * vectorResult.X;
-            int resultAddXY = resultPropX + resultPropY;
+            double resultPropX = Math.Pow(this.X, 2);
+            double resultPropY = Math.Pow(this.Y, 2);
+            double resultAddXY = resultPropX + resultPropY;
             double resultLength = Math.Sqrt(resultAddXY);
             return resultLength;
         } 

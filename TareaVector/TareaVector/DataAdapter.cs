@@ -10,8 +10,8 @@ namespace TareaVector
     public sealed class DataAdapter
     {
         private static DataAdapter instance = null;
-        public VectorOperations VectorA { get; private set; }
-        public VectorOperations VectorB { get; private set; }
+        public VectorOperations VectorA { get;  set; }
+        public VectorOperations VectorB { get;  set; }
         public const string SizeVectorMessage = "the size of the vector is incorrect, it must be x1, y1 x2, y2";
         public const string InvalidNumberMessage = "the vector data is not numbers";
 

@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TareaVector;
 
 namespace TestVectors
 {
@@ -8,6 +9,13 @@ namespace TestVectors
         [TestMethod]
         public void TestMethod1()
         {
+            string[] testArgs = { "2,4", "2,3" };
+            var operation = DataAdapter.Instance;
+            operation.ValidateInput(testArgs);
+            var vectorA = operation.VectorA;
+            var vectorB = operation.VectorB;
+            var resultSum = vectorA.Add(vectorB);
+            Assert.AreEqual(4, 4);
         }
     }
 }
